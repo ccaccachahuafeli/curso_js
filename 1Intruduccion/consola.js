@@ -1,7 +1,7 @@
 //para mostrar texto sin formato de texto plano
 console.log("mensaje de texto sin formato")
 // para mostrar texto informativo
-console.infO("mensaje de texto informativo")
+console.info("mensaje de texto informativo")
 //mensaje de error
 console.error("soy error")
 //mensaje warn
@@ -16,3 +16,13 @@ edad=18
   console.warn("eres pulpin")
  }
  console.timeEnd("gestion")
+
+ //mensaje de tipo tabla
+console.table("soy tabla")
+ lenguajes=[
+  {nombre:"javascript",extension:".js"},
+  {nombre:"python",extension:".py"},
+  {nombre:"php",extension:".php"}
+ ]
+ console.log(lenguajes)
+ console.table(lenguajes)

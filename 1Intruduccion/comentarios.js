@@ -10,7 +10,7 @@ comentarios multi linea
  * recibe dos parametros
  * y returna la suma ambos
  */
-function MediaKeyStatusMap(){
+function suma(a,b){
     return a+b
 }
-suma()
+suma(12,5)

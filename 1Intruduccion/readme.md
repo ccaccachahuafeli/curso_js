@@ -59,4 +59,41 @@ la herramienta de javascript mas usada, dentro de navegadores es usada para la [
  ```
 
  #### 3: tablas
+este tipo de mensaje por consola nos muestra la informacion en una tabla.
+solo formateara a los datos de tipo  `array{}`y `objetos[]` 
+ ```js
+ lenguajes=[
+  {nombre:"javascript",extencion:".js"},
+  {nombre:"python",extencion:".py"},
+  {nombre:"php",extencion:".php"}
+ ]
+ ```
+ [para ver los ejemplos has clic aqui](consola.js)
 
+## Naiming
+ es la tecnica para nombrar variables, funciones y clases dentro de un lenguaje de programacion.
+ las variables tienen reglas muy especificas y debemos seguir a la hora de designar sus nombres
+- debemos usar nombres que expliquen que aporta es variable a nuestro codigo 
+- no se puede usar espacio
+  > [!WARNING]
+  > ```JS
+  >#incorrecto
+  >con espacio=45
+  ```
+- no usar un numero delante
+  > [!WARNING]
+  > ```JS
+  >#incorrecto
+  >1numero=45
+  ```
+  
+- evitar simbolos y `snake_case`
+
+### usos correctos 
+- debemos usar nombres que expliquen que aporta esa variable a nuetro codigo
+- usar  `camelCase` 
+> [!TIP]
+> ```JS
+>#Correcto
+>edadAlumno=45
+> ```
