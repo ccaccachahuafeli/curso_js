@@ -37,3 +37,16 @@ los valores de tipo numero como es de esperar son numeros y en javascripts se es
 
 - tipos (tipos de datos)
 - operadores
+  
+#### aritmetica
+la principal operacion que se puede hacer con numeros es la aritmerica.
+Para esto tenemos los operadores aritmeticos basicos como:
+- suma(+).
+- resta(-).
+- multiplicacion(*).
+- division(/).
+- potencia(**).
+- modulo(%).
+  **Podemos agrupar**
+
+consulta el archivo de operadores[]
