@@ -2,10 +2,13 @@
 ## valores
 ### datos primitivos
 #### cadenas
+-[cadenas](#cadenas)
 -[indice](#indice)
 -[tipos de datos o valores](#valores)
+-[Operadores Unarios](#operadores-unarios)
+-[]
 ## valores
--[cadenas](#cadenas)
+
 imagena un mar de bits
 una computadora moderna tiene mas de 100 mil millones de bits almacenados en su `memoria de trabajo`o`memoria principal`o`memoria volatil`o`ram`.
 la memoria no volatil o memoria secundaria o memoria de almacenamiento tiene estos bits de manera ordenada generalmente apilada como si de un estante de una biblioteca se tratara.
@@ -113,7 +116,7 @@ el unico operador aritmetico que puede ser usado por cadenas e el operador de su
 "hola"+" "+"mundo"
 ```
 #### plantillas literales
-las plantillas literales mencionadas anteriormente con el nombre de acentos graves son usadas para mostrar texto literal, tambien nos permite ejecutar codigo javascript dentro de una pantilla literalel codigo o el resultado de este codigo sera transformado en un dato de tipo txto y se incluira en la posicion en que se encuentre.
+las plantillas literales mencionadas anteriormente con el nombre de acentos graves son usadas para mostrar texto literal, tambien nos permite ejecutar codigo javascript dentro de una pantilla literalel codigo o el resultado de este codigo sera transformado en un dato de tipo texto y se incluira en la posicion en que se encuentre.
 para hacer el uso de este funcionalidad debemos usa la seguiente expresion `${}`
 ```js
 //creando un pantilla literal - template litetls
@@ -121,5 +124,35 @@ para hacer el uso de este funcionalidad debemos usa la seguiente expresion `${}`
 // usando js dentro de un plantilla literal
 `la suma de  1+1 es ${1+1}`
 ```
->
+>[!TIP]
 > se dice literal por que con el formato que codificamos sera mostrado de esa misma forma en la consola
+
+
+#### Operadores Unarios
+  No todo los operadores son simbolos, algunos se escriben como palabras.
+  un ejemplo es el operador `typeof`, este operador produce un valor de cadena que indica el tipo de valor que le proporciona. 
+`operadore binarios` se les conoce porque operan sobre dos valores `2*5`
+`operador unario` por que solo trabaja con un valor
+```js
+//para poder ver su funcionalidad o el valor que genera siempre debemos mostrarlo en un console
+console.log(typeof 5)
+```
+#### Valores boleanos
+este tipo de dato primitivo cuando tenemos un valor que distinga solo entre dos  posibilidades, como `si` y `no`o `encendido` y `apagado`
+Para este proposito, javascript tiene un tipo de dato `booleano`, que  tiene  solo dos valores, `true` y `false`.
+**Que formas de producir valores booleanos tenemos**
+1.**usando operadores de comparacion**
+los operadores de comparacion son los siguientes:
+- Mayor que (>).
+- Menor que (<).
+- Mayor o igual que (>=).
+- Menor o igual que (<=).
+- Igual a (==).
+- Extrictamente igual (===).
+- No es igual a (!=).
+2.**usando los operadores logicos**
+javascript soporta tres operadores logicos
+- and (y) representacion en javascript `&&`
+- or (o) representacion en javascript ``
+- not (no) representacion es js `!`
+**observacion** este es un operador unario que su funcion es invertir el valor que tiene a su derecha `!true` produce `false`
