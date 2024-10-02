@@ -1,12 +1,16 @@
-# Valores,, Tipos y Operadores
+# Valores, Tipos y Operadores
 ## valores
-### datos primitivos
-#### cadenas
--[cadenas](#cadenas)
--[indice](#indice)
--[tipos de datos o valores](#valores)
--[Operadores Unarios](#operadores-unarios)
--[]
+- [Valores, Tipos y Operadores](#valores-tipos-y-operadores)
+  - [valores](#valores)
+    - [Datos Primitivos](#datos-primitivos)
+      - [Numeros(Number)](#numerosnumber)
+      - [Aritmetica](#aritmetica)
+      - [cadenas](#cadenas)
+      - [concatenacion](#concatenacion)
+      - [plantillas literales](#plantillas-literales)
+      - [Operadores unarios](#operadores-unarios)
+      - [Balores boleanos](#valores-boleanos)
+
 ## valores
 
 imagena un mar de bits
@@ -18,7 +22,7 @@ cuando hablamos de tipos de datos en javascripts nos referimos a su presentacion
 #### DATOS PRIMITIVOS
 son aquellos datos que ya existen no pueden ser creados, actualizados ni eliminados solo pueden ser llamados para el uso que deseamos darle.
 los datos primitivos son:
-#### - numeros(number)
+#### numeros(number)
 los valores de tipo numero como es de esperar son numeros y en javascripts se escribe o se hace el llamado de este valor de la seguiente manera.
 - numero de tipo de entero
  ```js
@@ -56,9 +60,9 @@ Para esto tenemos los operadores aritmeticos basicos como:
 - modulo(%).
 - incremento(++)
 - decremento(--)
-  **Podemos agrupar operaciones con parintesis() las operaciones que esten dentro**
-
-consulta el archivo de operadores[]
+**podemos agrupar operaciones con parentesis () las operaciones ques este entre los parentesis se ejecutar primero**
+consulta el archivos de operadores [aqui](./operadores.js).
+ve los ejercicios [aqui](./ejercicios.js)
 
 #### cadenas
 El seguiente tipo de dato primitivo es la `cadena`-`string`.
@@ -181,4 +185,5 @@ Evalua si el primer valor que se encuentra a su izquierda existe o forma parte d
 #### Operador Ternario
 Este operador trabaja con tres valores.
 el primer valor es el que determinara si se muestra el resto de valor.
-eso quiere dicer que  si el primer valor es verdadero mostrara el segundo valor mientras que si falso mostrar 
+eso quiere dicer que  si el primer valor es verdadero mostrara el segundo valor mientras que si false mostrar 
+

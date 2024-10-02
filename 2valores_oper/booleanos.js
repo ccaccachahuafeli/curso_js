@@ -44,8 +44,6 @@ console.log(0 && "hola")
 console.log(false || false) // false
 console.log(true || false) // true
 
-// 
-
 respuesta="te devuelve los ositos tiernos"
 console.log(respuesta  || "tu busqueda no existe")
 console.log( 0 || "")
