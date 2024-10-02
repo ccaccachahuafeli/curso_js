@@ -140,9 +140,12 @@ para hacer el uso de este funcionalidad debemos usa la seguiente expresion `${}`
 console.log(typeof 5)
 ```
 #### Valores boleanos
-este tipo de dato primitivo cuando tenemos un valor que distinga solo entre dos  posibilidades, como `si` y `no`o `encendido` y `apagado`
+este tipo de dato primitivo cuando tenemos un valor que distinga solo entre dos  posibilidades, como `si` y `no`o `encendido` y `apagado`.
+
 Para este proposito, javascript tiene un tipo de dato `booleano`, que  tiene  solo dos valores, `true` y `false`.
+
 **Que formas de producir valores booleanos tenemos**
+
 1.**usando operadores de comparacion**
 los operadores de comparacion son los siguientes:
 - Mayor que (>).
@@ -152,9 +155,30 @@ los operadores de comparacion son los siguientes:
 - Igual a (==).
 - Extrictamente igual (===).
 - No es igual a (!=).
+  
+
 2.**usando los operadores logicos**
 javascript soporta tres operadores logicos
 - and (y) representacion en javascript `&&`
 - or (o) representacion en javascript ``
 - not (no) representacion es js `!`
 **observacion** este es un operador unario que su funcion es invertir el valor que tiene a su derecha `!true` produce `false`
+> [!TIP]
+>**AND `&&` `??`** - Si tenemos dos valores verdaderos devolvera el segundo valor verdadero, si tenemos un valor falso y uno devolvera  el valor falso.
+
+> [!TIP]
+>**OR `||`** -Si tenemos dos valores verdaderos devolvera el primer valor verdadero, si tenemos un valor verdadero y uno falso devolvera el valor verdadero.
+
+3.**Usando el operador relacional**
+Este operador compara su valores y retorna un booleano como resultado.
+Lo que evalua este operador es si un propiedad especifica se encuentra en un objeto.
+Evalua si el primer valor que se encuentra a su izquierda existe o forma parte del segundo valor que se encuentra a su derecha.
+```js
+"a" in ["a","e","i","o","u",]
+```
+
+
+#### Operador Ternario
+Este operador trabaja con tres valores.
+el primer valor es el que determinara si se muestra el resto de valor.
+eso quiere dicer que  si el primer valor es verdadero mostrara el segundo valor mientras que si falso mostrar 
