@@ -54,6 +54,8 @@ Para esto tenemos los operadores aritmeticos basicos como:
 - division(/).
 - potencia(**).
 - modulo(%).
+- incremento(++)
+- decremento(--)
   **Podemos agrupar operaciones con parintesis() las operaciones que esten dentro**
 
 consulta el archivo de operadores[]

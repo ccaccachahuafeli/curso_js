@@ -11,6 +11,13 @@ console.log("division",4/5)
 console.log("potencia",5**6)
 //modulo
 console.log("modulo",4%6)
+//incremento
+num=0
+console.log(num++)  //primero valor uriginal y despues va sumar si quieres ver su resultado se pone ++num
+console.log(++num)
+//decremento
+num=0
+console.log(num--)
 /*realiza la operacion de suma 4 y 100 y luego multiplicar el resultado por 11*/
 //estamos hacemos uso de la agrupacion de operaciones.
 // precedencia de operadores
