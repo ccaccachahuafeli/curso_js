@@ -8,7 +8,7 @@ respuesta=num % 2 === 0 ? "par": "impar"
 console.log(respuesta)
 
 
-//mostrar un mensaje si la edad de una persona es major a 18
+//mostrar un mensaje si la edad de una persona es mayor a 18
 edad=19;
 respuesta=edad> 18 ? "es mayor de edad" : "es menor de edad"
 console.log(respuesta)
