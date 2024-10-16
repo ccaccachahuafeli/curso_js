@@ -76,10 +76,37 @@ una sentencia se ejecuta como se fuera una historia de arriba abajo.
  ```
  ### Ejecucion condicional
  hacemos uso de este control de flujo cuando tenemos distintos caminos o distintos mensajes que deseamos mostrar segun una condicion. Como creamos una condicion la ejecucion condicional se crea con la palabra reservada (keyword) `if` a continuacion de una `condicion` en llaves `{}`se escribira el cuerpo del codigo que deseo ejecutar en caso la condicion sea `verdad`.
- -**Condición simple `if`**
+ - **Condición simple `if`**
  ```js
  if true{
   let comparacion=5>4
   prompt("escribe tu nombre")
 }
+ ```
+- **condicion simple `if` de una sola linea**
+```js
+ if (1+1==2) console.log("es verdad");
+ ```
+ - **condicion de doble evaluacion `if else`**
+ existen casos en los que tendremos que ejecutar un codigo si es verdad pero tambien si es falso; ejecucion condicional de dos caminos.
+ ```js
+ let edadPersona =16;
+ if (edadPersona >=18){
+  console.log("eres de mayor de edad");
+ }else{
+  console.log("eres menor de edad")
+ }
+ ```
+ - **condicion multiple `if` `else if`**
+se utiliza cuando se tiene que evaluar y devolver varias opciones o multiples respuestas al usuario.
+```js
+ let total_compra =105
+ if (total_compra >50 && total_compra <100){
+  console.log(`tiene un descuento del 10% ${total_compra*0.10}`)
+ }
+ else if (total_compra > 100 && total_compra <500){
+  console.log("tienes un descuento del 20%")
+ }else{
+  console.log("tienes un descuento del 50%")
+ }
  ```
