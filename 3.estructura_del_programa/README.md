@@ -75,4 +75,11 @@ una sentencia se ejecuta como se fuera una historia de arriba abajo.
  // primero le pide al usuario un numero y despues muestra un mensaje y el cuadrado de ese numero
  ```
  ### Ejecucion condicional
- hacemos uso de este control de flujo cuando tenemos distintos caminos o distintos mensajes que deseamos mostrar segun una condicion.
+ hacemos uso de este control de flujo cuando tenemos distintos caminos o distintos mensajes que deseamos mostrar segun una condicion. Como creamos una condicion la ejecucion condicional se crea con la palabra reservada (keyword) `if` a continuacion de una `condicion` en llaves `{}`se escribira el cuerpo del codigo que deseo ejecutar en caso la condicion sea `verdad`.
+ -**Condición simple `if`**
+ ```js
+ if true{
+  let comparacion=5>4
+  prompt("escribe tu nombre")
+}
+ ```
