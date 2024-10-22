@@ -148,5 +148,5 @@ for(let i=2; i<=20; i++){
 > `while` se usa cuando no sabemos la cantidad de veces que deseamos ejecutar un codigo, por lo general su finalizacion requerira de una intervencion externa.
 > `for` se usa cuando sabemos la cantidad de veces que queremos o deseamos ejecutar un codigo.
 
-< [!NOTE] 
-< Para terminar un bucle se hace uso de la palabra reservada `break`.
+> [!NOTE] 
+> Para terminar un bucle se hace uso de la palabra reservada `break`.
