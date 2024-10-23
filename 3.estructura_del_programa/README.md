@@ -111,6 +111,24 @@ se utiliza cuando se tiene que evaluar y devolver varias opciones o multiples re
   console.log("tienes un descuento del 50%")
  }
  ```
+  - **Condición múltiple `switch`** Javascript dispone de una opción para crear estructuras condicionales multiples. switch permite crear estructuras mas optimizadas para cubrir un amplio abanico de posibilidades.
+  
+```js
+let edad=Number(prompt("Ingese su edad"))
+switch (edad){
+  case 4:
+    console.log("tienes 4 años")
+    break
+  case 8:
+    console.log("tines 8 años")
+    break
+  default:
+    console.log("tienes:,edad")
+    break
+
+
+}
+```
 
 ### Bucles
 Consideremos el siguiente problema
