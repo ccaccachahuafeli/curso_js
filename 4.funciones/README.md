@@ -8,6 +8,8 @@
  -[Funciones como valor](#funciones-como-valor)
  -[Funcion de fecha (arrow function)](#funcion-de-fecha-arrow-function)
  -[Diferencia](#diferencia)
+  -[Binding](#binding)
+-[La pila de llamadas](#la-pila-de-llamadas)
 
 ## FUNCIONES
 Las funcines en javascript son `bloques de codigo ejecutable`, a los que podemos pasar parametros y operar con ellos.
@@ -140,3 +142,49 @@ let registroUsuario=(nombre,apellido)=>{
 console.log(registroUsuario("edwin","cachondo"))
 ```
 ### Diferencia
+
+las diferencias que tenemos al momento de crear una funcion declarativa,funcion como valor y fecha es el binding.
+### Binding
+ es una tecnica que guarda las funciones y variables (enlaces) sube al princio la declaracion no el valor a la cabecera del principio del archivo de javascript.
+ ```JS
+ function saludo(){
+    return "hola primo"
+ }
+ function despedida(){
+    return "adios primo"
+ }
+ ```
+```js
+saludo()
+despedida()
+```
+## La pila de llamadas ( call stack)
+es una tecnica que se usa para controlar de manera correcta la ejecucion de una funcion.
+ **TAREA averiguar sobre LIFO**
+
+```js
+function cortarTomate(){
+    console.log("cortando tomate")
+}
+function cortarLechuga(){
+     console.log("cortando lechuga")
+}
+function cortarPepino(){
+    console.log("cortar pepino")
+}
+function cortarLimon(){
+    console.log("cortar limon")
+}
+ function preparaEnsalada(){
+     cortarTomate()
+     cortarLechuga()
+     cortarPepino()
+     cortarLimon()
+     console.log("mezclando las verduras")
+ }
+ function comer(){
+     preparandoEnsalada()
+     console.log("comiendo la ensalda")
+ }
+ comer()
+``` 
