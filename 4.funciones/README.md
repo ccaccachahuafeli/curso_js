@@ -161,6 +161,26 @@ despedida()
 ## La pila de llamadas ( call stack)
 es una tecnica que se usa para controlar de manera correcta la ejecucion de una funcion.
  **TAREA averiguar sobre LIFO**
+ LIFO significa `Last In, First Out` (último en entrar, primero en salir). Es una manera de organizar y gestionar datos, comúnmente usada en estructuras de datos como las pilas (stacks) en programación. En JavaScript, esto se puede implementar usando arrays y métodos como `push` y `pop`.
+ ```js
+ // Creando un stack
+const stack = [];
+
+// Agregando elementos (LIFO)
+stack.push(1); // [1]
+stack.push(2); // [1, 2]
+stack.push(3); // [1, 2, 3]
+
+// Eliminando elementos (LIFO)
+console.log(stack.pop()); // 3, stack = [1, 2]
+console.log(stack.pop()); // 2, stack = [1]
+console.log(stack.pop()); // 1, stack = []
+
+// El stack está ahora vacío
+console.log(stack.pop()); // undefined
+
+ ```
+ 
 
 ```js
 function cortarTomate(){
