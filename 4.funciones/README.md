@@ -93,55 +93,8 @@ registroAlumno(sexo="femenino",nombre="fely",apellido="astoyauri")
 registroAlumno("fely","fastoyauri","femenino")
 
 ```
-## Tipos de funciones por su notacion.
-### Funciones como valor
-en este caso se crea una funcion como se fuera un valor de un enlace.
-```js
-//funcion como valor
-let saludo=function(){
-    console.log(bienvenido)
-}
-saludo()
-```
-en este caso el nombre de la funcion sera el nombre que le pongamos al enlace y para llamrlo o ejecutarlo debemos poner el nombre del enlace mas parentesis.
-al igual que una funcion clasica podemos tambiem pasarle parametro.
-### funcion como declaracion
-se le reconoce como la funcion `declarativa` a la manera clasica de como creamos una funcion.
-```js
-//funcion como vdeclaracion
-function saludo(){
-    return "saludo a todos"
-}
-console.log(saludo())
-```
-### Funcion de fecha (arrow function)
-esta funcion es introducida a partir de la version de enma script 5 `es5`.
-se implemento para la creacion y ejecucion rapida y mas entendible de las funciones.
-la funcion flecha evita la `verbosidad` en javascript.
->[!NOTE]
-> `verbosidad`o `verboso` se utiliza en la programacion para referice a un codigo que necesita demaciada lineas de codigo o necesita cumplir estyrictamente una serie de reglas podemos comparar la `verbosidad` a un texto demaciado extenso o redundancia, 
-se crea de la misma manera que una funcion como valor eso quiere decir que la funcion flecha sera el valor de un enlace.
-la funcion flecha tiene la siguiente estructura.
-el parametro seguido del simbolo flecha `=>` y del cuerpo de ser necesario o solo de codigo que se retornara.
-```js
-function saludo(){
-    return "hola mundo"
-}
-console.log(saludo())
-
-let saludo=()=>("hola mundo")
-    console.log(saludo())
-
-let mensaje=texto=>console.log("hola,",texto)
-console.log(mensaje("el primo"))
-
-// en el caso de tener mas de un parametro y ejecutar mas de una sola linea de codigo
-let registroUsuario=(nombre,apellido)=>{
-    let alumno=`${nombre},${apellido}`
-}
-console.log(registroUsuario("edwin","cachondo"))
-```
-### Diferencia
+> [!INFO]
+> posicionales en orden y nominales especificar el parametro y su valor.
 
 las diferencias que tenemos al momento de crear una funcion declarativa,funcion como valor y fecha es el binding.
 ### Binding
