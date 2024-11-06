@@ -10,6 +10,8 @@
  -[Diferencia](#diferencia)
   -[Binding](#binding)
 -[La pila de llamadas](#la-pila-de-llamadas)
+-[CLOSURE o Funciones de cierre (Funciones que retorna funciones)](#closure-o-funciones-de-cierre-funciones-que-retorna-funciones)
+ -[closure tipo clase](#closure-tipo-clase)
 
 ## FUNCIONES
 Las funcines en javascript son `bloques de codigo ejecutable`, a los que podemos pasar parametros y operar con ellos.
@@ -182,3 +184,25 @@ function retornaValor(n){
 retornaValor(10)()
 ```
 >[!NOTE]Las funciones closure son usadas por que pueden mantener el valor de sus enlaces o variables locales en todo el proceso de la ejecucion de su funcion padre por cada llamada que se le realice.
+### closure tipo clase 
+son funciones cuyo uso son iguales a las clases dentro de la ejecucion de una clase tenemos lo que se llama  como `instancia` en javascript tenemos funciones `closure` que se pueden instanciar al igual que una clase, la direfencia con la funciones `closure` clasicas es que en esta hacemos uso de la palabra reservada `keyword` llamada `this`.
+```js
+function contador(){
+    this.contador=0
+    this.incre=function(){
+        this.contador++  
+    }
+    this.decre=function(){
+        this.contador--  
+    }
+}
+// realizando la instancia con new
+let count1=new contador()
+count1.contador
+```
+>[!NOTE]
+>La funcion closure de tipo clase no hace uso de `return` en sus funcion es al hacer uso de `this` caso funcion o variable estara enlasada al objeto que se cree.
+>[!WARNING]
+>El problema pricipal de este tipo de funcion, es que cuando creamos un nuevo objeto a partir de le funcion tipo clase, reservara espacio en memoria para toda la clase y sus valor creados eso quiere decir variables y funciones, cada vez que llamamos a un funcion esta se replica en memoria.
+### prototype (tarea-averiguar y sus ejemplos)
+

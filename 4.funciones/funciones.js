@@ -40,7 +40,7 @@ function despedida(){
 //fuction valorContador
 //return contador
 
-function contador(){
+/**function contador(){
     //variable local
     let contador = 0 
     function incremento(){
@@ -76,4 +76,20 @@ count2.valorContador()
 // count1.incremento()
 // count1.valorContador()
 // count1.decremento()
-// count1.valorContador()
+// count1.valorContador()*/
+
+// contador 
+function contador(){
+    this.contador=0
+    this.incre=function(){
+        this.contador++  
+    }
+    this.decre=function(){
+        this.contador--  
+    }
+}
+// realizando la instancia con new
+let count1=new contador()
+console.log(count1.contador)
+count1.incre()
+console.log(count1.contador)
