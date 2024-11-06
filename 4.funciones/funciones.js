@@ -41,30 +41,39 @@ function despedida(){
 //return contador
 
 function contador(){
-    //variable local 
-    let contador=0
-    function incre(){
+    //variable local
+    let contador = 0 
+    function incremento(){
         return contador++
     }
-    function decre(){
+    function decremento(){
         return contador--
     }
-    function valueCount(){
+    function valorContador(){
         console.log(contador)
     }
-    return {
-       valueCount,
-        incre,
-        decre
+    return{
+        valorContador,
+        incremento,
+        decremento
     }
 }
 let count1=contador()
 for(let i=0;i<5;i++){
-    count1.incre()
+    count1.incremento()
 }
-count1.valueCount()
+count1.valorContador()
 
 let count2=contador()
-for(let i=0;i)
-count2.incre()
-coun1.decre()
+for(let i=0;i<5;i++){
+    count2.decremento()
+}
+count2.valorContador()
+
+
+// let count1=contador()
+// count1.valorContador()
+// count1.incremento()
+// count1.valorContador()
+// count1.decremento()
+// count1.valorContador()
