@@ -205,4 +205,25 @@ count1.contador
 >[!WARNING]
 >El problema pricipal de este tipo de funcion, es que cuando creamos un nuevo objeto a partir de le funcion tipo clase, reservara espacio en memoria para toda la clase y sus valor creados eso quiere decir variables y funciones, cada vez que llamamos a un funcion esta se replica en memoria.
 ### prototype (tarea-averiguar y sus ejemplos)
+ un prototipo es un objeto del cual otros objetos pueden heredar propiedades y métodos. Esto permite la creación de propiedades y métodos que pueden ser compartidos por todas las instancias de un objeto.Esto es conocido con frecuencia como la cadena de prototipos,se establece un enlace entre la instancia del objeto y su prototipo (su propiedad `__proto__`, la cual es derivada de la propiedad `prototype` sobre el constructor), y las propiedades y metodos son encontrados recorriendo la cadena de prototipos.
+```js
+// crear objeto
+let persona = {
+    nombre: 'fely',
+    saludar: function() {
+      console.log(`Hola, mi nombre es ${this.nombre}`);
+    }
+  };
+  
+  // Acceder al prototipo de `persona`
+  console.log(persona.__proto__); // Mostrará el prototipo de Object
+  
+  // Crear un objeto que hereda de `persona`
+  let trabajador = Object.create(persona);
+  trabajador.ocupacion = 'Desarrollador';
+  
+  // Acceder a propiedades y métodos heredados del prototipo
+  console.log(trabajador.nombre); // "fely" (heredado de `persona`)
+  trabajador.saludar();
+```
 
