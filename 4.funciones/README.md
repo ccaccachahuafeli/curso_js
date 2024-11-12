@@ -226,4 +226,23 @@ let persona = {
   console.log(trabajador.nombre); // "fely" (heredado de `persona`)
   trabajador.saludar();
 ```
-
+**prototype**
+Para crear un prototypo tendremos que crear primero nuestra funcion principal que es la encargada de almacenar nuestras variables locales con las que trabajaremos. 
+Luego accederemos al prototype de nuestro funcion creada y en valor o variables de tipo objeto le indicaremos  las funciones que tendra nuestra  funcion principal que interactuara con nuestras variables locales.
+```js
+function Contador(nombre){
+    this.count=0
+    this.nombre=nombre
+}
+contador.prototype={
+    incremento:function(){
+        this.count++},
+    decremento:function(){
+        this.count--},
+    mostrarDatos:function(){
+        return `${this.count}`,`${this.nombre}`
+    }
+}
+```
+> [!NOTE]
+> 
