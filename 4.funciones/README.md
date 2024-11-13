@@ -248,10 +248,39 @@ contador.prototype={
 > [!NOTE]
 > es una convencion usar como nombre de nueva funcion principal. 1.que debe ser singular,2.que se use PascalCase.
 ## RECURSION EN FUNCION (TAREA)
+es una técnica en la que una función se llama a sí misma para resolver un problema más grande. Se basa en dividir el problema en subproblemas más pequeños y similares al problema original, hasta alcanzar una condición base que detenga la recursión.
+```js
+function potencia(base, exponente) {
+  if (exponente === 0) return 1; // Caso base: cualquier número elevado a 0 es 1
+  return base * potencia(base, exponente - 1); // Llamada recursiva
+}
+
+console.log(potencia(2, 3)); // Resultado: 8
+
+```
 ## FUNCIONES CALLBACKS(TAREA)
+Cuando envías una función como argumento a otra función en JavaScript, estás dando instrucciones para que la ejecución más tarde o en ciertas circunstancias específicas. Este tipo de función que se envía y ejecuta más adelante se llama `callback` (o "función de devolución de llamada").
+
+Las funciones de devolución de llamada son muy importantes en JavaScript, sobre todo para gestionar tareas que no se completan de inmediato (como temporizadores, eventos o solicitudes de datos). Esto permite que el código JavaScript continúe ejecutándose mientras espera a que estas tareas asíncronas terminen. Después de completarse, la función `callback` se ejecuta para procesar el resultado o hacer algo adicional.
+```js
+function obtenerNombre(callback) {
+  const nombre = "feli";
+  console.log("Nombre obtenido.");
+  callback(nombre); // Llama a la función callback pasando el nombre
+}
+
+function saludar(nombre) {
+  console.log(`Hola, ${nombre}!`);
+}
+
+// Usamos `obtenerNombre` y pasamos `saludar` como callback
+obtenerNombre(saludar);
+
+```
+
 # CLASES
 Las clases en javascript llegan en la version `ECMAScript 6`, javascript no tenia al igual que otros lenguajes de programacion orientados a objetos las `clases` ya que js se enfocaba en la `programacion funcional`, sin embargo con la llegada es `Es6`, javascript adopta ser un lenguaje de programacion multiparadigma, entre ellos la programacion orientada a objetos con la llegada de las `clases`.
-## Esctructura de una clase en js
+## Estructura de una clase en js
 Una clase está separada en 3 grandes secciones.
 
 1. El nombre de la clase deberá ser en singular y en PascalCase.
