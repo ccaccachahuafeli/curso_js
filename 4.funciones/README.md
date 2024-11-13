@@ -226,6 +226,7 @@ let persona = {
   console.log(trabajador.nombre); // "fely" (heredado de `persona`)
   trabajador.saludar();
 ```
+
 **prototype**
 Para crear un prototypo tendremos que crear primero nuestra funcion principal que es la encargada de almacenar nuestras variables locales con las que trabajaremos. 
 Luego accederemos al prototype de nuestro funcion creada y en valor o variables de tipo objeto le indicaremos  las funciones que tendra nuestra  funcion principal que interactuara con nuestras variables locales.
@@ -245,4 +246,33 @@ contador.prototype={
 }
 ```
 > [!NOTE]
-> 
+> es una convencion usar como nombre de nueva funcion principal. 1.que debe ser singular,2.que se use PascalCase.
+## RECURSION EN FUNCION (TAREA)
+## FUNCIONES CALLBACKS(TAREA)
+# CLASES
+Las clases en javascript llegan en la version `ECMAScript 6`, javascript no tenia al igual que otros lenguajes de programacion orientados a objetos las `clases` ya que js se enfocaba en la `programacion funcional`, sin embargo con la llegada es `Es6`, javascript adopta ser un lenguaje de programacion multiparadigma, entre ellos la programacion orientada a objetos con la llegada de las `clases`.
+## Esctructura de una clase en js
+Una clase está separada en 3 grandes secciones.
+
+1. El nombre de la clase deberá ser en singular y en PascalCase.
+2. Debera tener atributos (valores o variables), estos deben ser sustantivos y estar escritos en camelCase.
+3. Deberán tener métodos (acciones, funciones), estos deberán ser verbos o estar escritos en camelCase.
+```JS
+class Computadora{
+    //atributos
+    constructor(marca){
+        this.marca=marca
+        this.color=""
+        this.tipoCase="tower"
+    }
+    //metodos
+    encender(){return "estoy encendiendo"}
+    apagar(){return "estoy cerrando sesion y guardando informacion antes del apagado"}
+    escribir(){return "escribiendo mi informe"}
+    jugar(){return "jugando dota"}
+}
+//instanciar
+let miPc()=new Computador("gigabyte")
+miPc.encender()
+```
+

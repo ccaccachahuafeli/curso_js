@@ -94,32 +94,24 @@ console.log(count1.contador)
 count1.incre()
 console.log(count1.contador)*/
 
-
-function Contador(nombre){
+//prototype
+function  Contador(nombre){
     this.count=0
     this.nombre=nombre
 }
-    Contador.prototype={
-    incremento:function(){
-        this.count++},
-    decremento:function(){
-        this.count--},
-        ActualizarNombre:function(nuevoNombre){
-            this.nombre = nuevoNombre
-         }
-    }    
-    mostrarDatos:function(){
-        return `${this.count},${this.nombre}`
-    },
-    ActualizarNombre:function(nuevoNombre){
-        this.nombre = nuevoNombre
-     }
+Contador.prototype={
+    incremento:function(){this.count++},
+    dcremento:function(){this.count--},
+    mostrarDatos:function(){return `${this.count},${this.nombre}`},
+    actualizarNombre:function(nuevoNombre){this.nombre = nuevoNombre}
 }
-let contadorUno=new Contador("PRIMO")
+//instanciar mi funcion
+let contadorUno=new Contador("primo")
 console.log(contadorUno.mostrarDatos())
 contadorUno.incremento()
 contadorUno.incremento()
 console.log(contadorUno.mostrarDatos())
+contadorUno.actualizarNombre("FELY");
+console.log(contadorUno.mostrarDatos())
 contadorUno.incremento()
-contadorUno.actualizarNombre("FELY") 
 console.log(contadorUno.mostrarDatos())
