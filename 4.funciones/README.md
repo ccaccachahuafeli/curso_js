@@ -12,6 +12,11 @@
 -[La pila de llamadas](#la-pila-de-llamadas)
 -[CLOSURE o Funciones de cierre (Funciones que retorna funciones)](#closure-o-funciones-de-cierre-funciones-que-retorna-funciones)
  -[closure tipo clase](#closure-tipo-clase)
+ -[prototype (tarea-averiguar y sus ejemplos)](#prototype-tarea-averiguar-y-sus-ejemplos)
+ -[RECURSION EN FUNCION (TAREA)](#recursion-en-funcion-tarea)
+ -[FUNCIONES CALLBACKS(TAREA)](#funciones-callbackstarea)
+-[CLASES](#clases)
+ -[Estructura de una clase en js](#estructura-de-una-clase-en-js)
 
 ## FUNCIONES
 Las funcines en javascript son `bloques de codigo ejecutable`, a los que podemos pasar parametros y operar con ellos.
