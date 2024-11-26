@@ -12,11 +12,6 @@
 -[La pila de llamadas](#la-pila-de-llamadas)
 -[CLOSURE o Funciones de cierre (Funciones que retorna funciones)](#closure-o-funciones-de-cierre-funciones-que-retorna-funciones)
  -[closure tipo clase](#closure-tipo-clase)
- -[prototype (tarea-averiguar y sus ejemplos)](#prototype-tarea-averiguar-y-sus-ejemplos)
- -[RECURSION EN FUNCION (TAREA)](#recursion-en-funcion-tarea)
- -[FUNCIONES CALLBACKS(TAREA)](#funciones-callbackstarea)
--[CLASES](#clases)
- -[Estructura de una clase en js](#estructura-de-una-clase-en-js)
 
 ## FUNCIONES
 Las funcines en javascript son `bloques de codigo ejecutable`, a los que podemos pasar parametros y operar con ellos.
@@ -231,7 +226,6 @@ let persona = {
   console.log(trabajador.nombre); // "fely" (heredado de `persona`)
   trabajador.saludar();
 ```
-
 **prototype**
 Para crear un prototypo tendremos que crear primero nuestra funcion principal que es la encargada de almacenar nuestras variables locales con las que trabajaremos. 
 Luego accederemos al prototype de nuestro funcion creada y en valor o variables de tipo objeto le indicaremos  las funciones que tendra nuestra  funcion principal que interactuara con nuestras variables locales.
@@ -251,62 +245,39 @@ contador.prototype={
 }
 ```
 > [!NOTE]
-> es una convencion usar como nombre de nueva funcion principal. 1.que debe ser singular,2.que se use PascalCase.
-## RECURSION EN FUNCION (TAREA)
-es una técnica en la que una función se llama a sí misma para resolver un problema más grande. Se basa en dividir el problema en subproblemas más pequeños y similares al problema original, hasta alcanzar una condición base que detenga la recursión.
-```js
-function potencia(base, exponente) {
-  if (exponente === 0) return 1; // Caso base: cualquier número elevado a 0 es 1
-  return base * potencia(base, exponente - 1); // Llamada recursiva
-}
-
-console.log(potencia(2, 3)); // Resultado: 8
-
-```
-## FUNCIONES CALLBACKS(TAREA)
-Cuando envías una función como argumento a otra función en JavaScript, estás dando instrucciones para que la ejecución más tarde o en ciertas circunstancias específicas. Este tipo de función que se envía y ejecuta más adelante se llama `callback` (o "función de devolución de llamada").
-
-Las funciones de devolución de llamada son muy importantes en JavaScript, sobre todo para gestionar tareas que no se completan de inmediato (como temporizadores, eventos o solicitudes de datos). Esto permite que el código JavaScript continúe ejecutándose mientras espera a que estas tareas asíncronas terminen. Después de completarse, la función `callback` se ejecuta para procesar el resultado o hacer algo adicional.
-```js
-function obtenerNombre(callback) {
-  const nombre = "feli";
-  console.log("Nombre obtenido.");
-  callback(nombre); // Llama a la función callback pasando el nombre
-}
-
-function saludar(nombre) {
-  console.log(`Hola, ${nombre}!`);
-}
-
-// Usamos `obtenerNombre` y pasamos `saludar` como callback
-obtenerNombre(saludar);
-
-```
-
+> es una convencion usar como nombre de nuestra funcion principal.1. que debe ser 
+## RECURSION..
 # CLASES
-Las clases en javascript llegan en la version `ECMAScript 6`, javascript no tenia al igual que otros lenguajes de programacion orientados a objetos las `clases` ya que js se enfocaba en la `programacion funcional`, sin embargo con la llegada es `Es6`, javascript adopta ser un lenguaje de programacion multiparadigma, entre ellos la programacion orientada a objetos con la llegada de las `clases`.
-## Estructura de una clase en js
-Una clase está separada en 3 grandes secciones.
-
-1. El nombre de la clase deberá ser en singular y en PascalCase.
-2. Debera tener atributos (valores o variables), estos deben ser sustantivos y estar escritos en camelCase.
-3. Deberán tener métodos (acciones, funciones), estos deberán ser verbos o estar escritos en camelCase.
-```JS
+Las clases en javascript llegan la version `ECMAScript 6`, javascript no tenia al igual que otros lenguajes de programacion orientados a objetos las `clase` ya que js se enfocaban en la `programacion funcional`, sin embargo con la llegada de `ES6`, javascript adopta ser un lenguaje de programacion  multiparadigma, entre ellos la `programacion orientado a objeto` con la llegada de las clases.
+## Estructura de una clase en js.
+Una clase esta  separada en tres grandes secciones.
+1. el nombre de la clase que debera ser en singular y deberan estar escritos en PascalCase.
+2. debera tener atributos(valores,variables) estos deberan ser sustantivos y estar escritos en camelCase.
+3. debera tener metodos(acciones, funciones) estos deberan ser verbos y estar escritos en camelCase.
+```js
 class Computadora{
-    //atributos
+    // Atributos
     constructor(marca){
         this.marca=marca
         this.color=""
         this.tipoCase="tower"
     }
-    //metodos
-    encender(){return "estoy encendiendo"}
-    apagar(){return "estoy cerrando sesion y guardando informacion antes del apagado"}
-    escribir(){return "escribiendo mi informe"}
-    jugar(){return "jugando dota"}
+   // metodos
+   encender(){
+    return "estoy encendiendo"
+   }
+   apagar(){
+    return "estoy cerrando sesion y guardando"
+   }
+    escribir(){
+    return "escribiendo mi informe"
+   }
+    jugando(){
+    return "estoy jugando"
+   }
 }
-//instanciar
-let miPc()=new Computador("gigabyte")
-miPc.encender()
+ // instanciar
+ let miPc=new Computadora("gigabyte")
+ miPc.encender()
 ```
 
