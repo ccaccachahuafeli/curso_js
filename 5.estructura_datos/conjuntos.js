@@ -8,13 +8,61 @@ for (let i=0;i<5;i++){
     console.log(vocales[i])
 }
 console.log(vocales.length)*/
-//tengo una lista de frutas
+
+//TRABAJOS:
+//1. tengo una lista de frutas
 // crear un programa que identifique si en mi lista existe naranja,de existir me mostrar su indice,
 //de no existe me mostrara un mensaje de error.
-let frutas=["piña","naranja","durasno","platano","kiwi","uva","fresa"]
-// crear dos funciones que reciban por parametros de lista de numeros una funcion encontrara de devolvera
-// el numero menor de la lista y la otra funcion encontrara y devolvera el numero maayor d la lista. 
+let frutas = ["piña", "naranja", "durasno", "platano", "kiwi", "uva", "fresa"];
+let frutaBuscada = "naranja";
+let indice = -1;
+
+for (let i = 0; i < frutas.length && indice === -1; i++) 
+  if (frutas[i] === frutaBuscada) indice = i;
+
+console.log(frutas)
+
+console.log(indice !== -1 
+  ? `La fruta "${frutaBuscada}" está en la lista, en el índice ${indice}.` 
+  : `Error: La fruta "${frutaBuscada}" no se encuentra en la lista.`);
+
+
+// 2. crear dos funciones que reciban por parametros de lista de numeros una funcion encontrara de devolvera
+// el numero menor de la lista y la otra funcion encontrara y devolvera el numero mayor de la lista. 
 //ojo no usar los metodos de min y max.
+// Lista de números
+let numeros = [34, 8, 45, 30, 2, 80];
+
+function encontrarMenor(lista) {
+  let menor = lista[0];
+  for (let num of lista) if (num < menor) menor = num;
+  return menor;
+}
+
+function encontrarMayor(lista) {
+  let mayor = lista[0];
+  for (let num of lista) if (num > mayor) mayor = num;
+  return mayor;
+}
+
+console.log("Menor:", encontrarMenor(numeros)); 
+console.log("Mayor:", encontrarMayor(numeros)); 
+
+
 
 // crear una funcion que me permite contar la cantidad de vocales "a" que tenga en un lista.
+// Lista de palabras
+let palabras = ["manzana", "pera", "banana", "uva", "fresa"];
+function contarVocalA(lista) {
+  let count = 0;
+  for (let i = 0; i < lista.length; i++) {
+    for (let j = 0; j < lista[i].length; j++) {
+      if (lista[i][j] === 'a' || lista[i][j] === 'A') {
+        count++;
+      }
+    }
+  }
+  return count;
+}
+console.log("Cantidad de vocales 'a':", contarVocalA(palabras));
 
