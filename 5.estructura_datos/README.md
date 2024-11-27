@@ -6,6 +6,7 @@
  -[acceder a un elemento del array](#acceder-a-un-elemento-del-array)
  -[metodos](#metodos)
 [Objetos](#objetos)
+ -[creacion de ob.](#creacion-de-ob)
 
 # Estructuras de datos
 A parte de los tipos de datos primitivos, javascript  nos proporciona los tipos de datos complejos conocidos tambien como datos estructurados o estructura de datos.
@@ -347,6 +348,25 @@ console.log(aplanado);
 ```
 
 ## Objetos
-### creacion 
+los objetos son tipos de datos estructurados semilares a las listas, para poder acceder a un elemento de la lista javascript les asignaba indices, en este caso los objetos  como unica diferencia de las listas nosotros podremos asignar el nombre del elemento al cual deseamos acceder a esto se le conoce como `clave:valor`.
+cada clave:valor es un elemento de un objeto si deseamos crear mas elementos que separarlos por comas.
+### creacion de ob.
+para crear un objeto debemos encerrar los elemento en  llaves`{}` para elemento estara conformado por su `clave:valor`
+```js
+let datosJory=["jory","rodrigues",20,"M"]
+let datosJoryObjeto={
+  nombre:"jory",
+  apellido:"rodrigues",
+  edad:"20",
+  sexo:"M",
+  ganado:["PRIMO","CHAMOS","ENFERMERAS","MINEROS"],
+  direccion:{
+    tipoCalle:"pasajes",
+    nombreCalle:"querobamba",
+    numeroVivienda:222,
+    numeroCuarto:5
+  }
+}
+```
 ### acceder a un elemento del objeto
 ### metodos

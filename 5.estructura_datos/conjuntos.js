@@ -13,7 +13,7 @@ console.log(vocales.length)*/
 //1. tengo una lista de frutas
 // crear un programa que identifique si en mi lista existe naranja,de existir me mostrar su indice,
 //de no existe me mostrara un mensaje de error.
-let frutas = ["piña", "naranja", "durasno", "platano", "kiwi", "uva", "fresa"];
+/**let frutas = ["piña", "naranja", "durasno", "platano", "kiwi", "uva", "fresa"];
 let frutaBuscada = "naranja";
 let indice = -1;
 
@@ -64,5 +64,68 @@ function contarVocalA(lista) {
   }
   return count;
 }
-console.log("Cantidad de vocales 'a':", contarVocalA(palabras));
+console.log("Cantidad de vocales 'a':", contarVocalA(palabras));*/
+
+// tenga la siguientes url
+// www.gatitas.com/?q=marina+gold
+// crear un programa que me capture la querey
+
+/**let url="www.gatitas.com/?q=marina+gold"
+let listaUrl=url.split("=")[1].split("+").join(" ")
+console.log(listaUrl)*/
+
+// POR PASOS:
+/**let url="www.gatitas.com/?q=marina+gold"
+let cortarUrl=url.split("=")
+let obtenerPrimerElemento=cortarUrl[1]
+let dividoTextoEnDos=obtenerPrimerElemento.split("+")
+let juntarTexto=dividoTextoEnDos.join(" ")
+console.log(juntarTexto)*/
+// las lista se pueden acceder por .
+// ["nombre del clave"]
+/**let datosJoryObjeto={
+  nombre:"jory",
+  apellido:"rodrigues",
+  edad:"20",
+  sexo:"M",
+  ganado:["PRIMO","CHAMOS","ENFERMERAS","MINEROS"],
+  direccion:{
+    tipoCalle:"pasajes",
+    nombreCalle:"querobamba",
+    numeroVivienda:222,
+    numeroCuarto:5
+  }
+}
+console.log(datosJoryObjeto)
+console.log(datosJoryObjeto.ganado)
+console.log(datosJoryObjeto["sexo"])
+console.log(datosJoryObjeto.direccion["numeroVivienda"])
+console.log(datosJoryObjeto.ganado[3])*/
+
+
+// crear un funcion que me genere un objeto de caracteristicas tecnicas de una computadora, 
+//el objeto debera tener como minimo los siguioentes:
+// marca,modelo,procesador,ram,disco y tarjeta de video.
+
+function Computadora(marca, modelo, procesador, ram, disco) {
+  
+  let computadora = {
+      marca: marca,
+      modelo: modelo,
+      procesador: procesador,
+      ram: ram,
+      disco: disco
+  };
+  return computadora;
+}
+let miComputadora =Computadora('php', 'XPS 15', 'Intel Core i7', '8GB', '500GB SSD');
+console.log(miComputadora);
+// en este caso la clave marca existe en mi computadora por lo tanto su valor sera actualizada por intel
+miComputadora["marca"]="intel"// este es para cambiar marca
+console.log(miComputadora);
+// para agregar un objeto
+miComputadora["tarjeta"]="nvidia me tienes nvidia"
+// como elimina un elemento de un objeto 
+
+// hacer ejercicos de 7 al 10
 
